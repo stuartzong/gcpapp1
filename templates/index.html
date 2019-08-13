@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -8,17 +9,11 @@
 <body>
 
   <h1>Datastore and Firebase Auth Example</h1>
-
-
-   <h2>Last 10 visits</h2>
-   {% for time in times %}
-       <p>{{ time['timestamp'] }}</p>
-   {% endfor %}
-
-#  <h2>Last 10 visits</h2>
-#  {% for time in times %}
-#    <p>{{ time }}</p>
-#  {% endfor %}
-
+  <!-- [START gae_python37_datastore_print_times] -->
+  <h2>Last 10 visits</h2>
+  {% for time in times %}
+    <p>{{ time['timestamp'] }}</p>
+  {% endfor %}
+  <!-- [END gae_python37_datastore_print_times] -->
 </body>
 </html>
